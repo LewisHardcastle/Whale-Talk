@@ -1,0 +1,28 @@
+let input = 'whale talk';
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+let resultArray = [];
+
+for (let i = 0; i < input.length; i++)
+{
+  for (j = 0; j < vowels.length; j++)
+  {
+    if (input[i] === vowels[j])
+    {
+    let x = vowels[j];
+    resultArray.push(x);
+    }
+  }
+    if (input[i] === 'e' || 'u')
+    {    
+    let y = input[i];
+    resultArray.push(y);
+    }
+    if (input[i] === 'u')
+    {    
+    let z = input[i];
+    resultArray.push(z); 
+    }
+}
+console.log(resultArray);
+let resultString = resultArray.join('').toUpperCase();
+console.log(resultString);
